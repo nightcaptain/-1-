@@ -13,8 +13,6 @@
 - **服务器端** 监听特定端口上的连接请求，接受来自客户端的向量运算请求，并执行相应的计算，然后将结果返回给客户端。
 - **客户端** 向服务器发送向量计算请求，并接收计算结果。
 
-![7d07ac8ee999759d92d1b3eb3281e06e.png](en-resource://database/638:1)
-
 
 #### 详细设计
 - **服务器端设计**:
@@ -215,11 +213,14 @@ public class VectorCalculationClient {
 #### 测试结果
 - 功能测试：点乘和叉乘操作均返回正确结果，与预期一致。
 
-    ![e5877570c184388d3e87c3ae05c6ef9f.png](en-resource://database/604:1)
+   ![2af04af5ed5c2a9c710f2c5df5a9420](https://github.com/nightcaptain/Distributed_computing_first/assets/131536576/00b68b6c-a21e-4441-939f-fc6eb19d13cd)
+
 
 - 并发测试：服务器能够同时处理多个客户端的请求，没有出现错误或拒绝服务。
-![e0c5967b00d01e0d2a23e7870272bc06.png](en-resource://database/606:1)
-![8ed3158f361f006ed23ef04cf42e6252.png](en-resource://database/608:1)
+![157d70725e0d1297c55f3009bcfdbdc](https://github.com/nightcaptain/Distributed_computing_first/assets/131536576/dc7925d6-978a-4ce0-93e3-effa2cc17bb9)
+
+![845b76ea9f45b535e70379c896dbba8](https://github.com/nightcaptain/Distributed_computing_first/assets/131536576/4477f21f-b69e-4553-82a5-305ff7eb311c)
+
 
 
 #### 问题与解决方案
